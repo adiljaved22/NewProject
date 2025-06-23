@@ -1,10 +1,12 @@
 package org.example
 
-fun main(){
-    println("PLZ ENTER A NUMBER")
-    val a=readln()
-    val input=a.toInt()
-   val even=input%2==0
-        println("You have entered even???$even" )
+import javax.swing.DefaultListSelectionModel
 
+fun main(){
+ println("Enter Any Number")
+    val no=readln()
+    println("Entered number is $no")
+    val convertingint=no.toInt()
+    val even =convertingint%2==0
+    println("Is this even: $even")
 }
