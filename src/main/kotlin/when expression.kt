@@ -29,7 +29,7 @@ fun main(){
 
             else->"null"
         }
-        println(output)
+        println("$output")
     }
     else{
         println("Invalid input")
