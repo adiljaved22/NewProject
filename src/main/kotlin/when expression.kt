@@ -25,6 +25,7 @@ fun main(){
             3->"Number is 3"
             4->"Number is 4"
             5->"Number is 5"
+            in 5..10->"Number is between 5 and 10"
 
 
             else->"null"
