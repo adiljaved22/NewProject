@@ -57,6 +57,7 @@ var sum=0
 }*/
 
 //Another method of printing an Array
+/*
 fun main(){
     println("Enter numbers ")
     var array=mutableListOf<Int>()
@@ -74,3 +75,4 @@ fun main(){
     println("${array}")
 
 }
+*/

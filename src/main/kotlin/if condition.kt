@@ -1,7 +1,6 @@
 package org.example
 
 
-
 fun main(){
     println("Enter any number:")
   val new=readln()
