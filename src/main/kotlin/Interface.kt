@@ -27,8 +27,8 @@ fun main(){
     )
     println("Area of circle is:${cir.area}")
     println("Circumference is:${cir.circumference}")
-    println(sumarea(rect, cir))
-    println(sumcircumference(rect,cir))
+    println("The sum of area of rectangle and circle:${sumarea(rect, cir)}")
+    println("The sum of circumference of rectangle and circle:${sumcircumference(rect,cir)}")
 }
 interface Shape{
     val area: Float
