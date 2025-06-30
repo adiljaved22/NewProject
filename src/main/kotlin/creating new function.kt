@@ -48,6 +48,7 @@ fun reversing(changing: String): String {
 
 
 }*/
+/*
 //GIVING DEFAULT STRING
 fun main() {
     println("Enter string:")
@@ -76,4 +77,6 @@ fun reversing(changing: String= "Hello world"
     return reversed
 
 
-}
+}*/
+
+
