@@ -19,20 +19,33 @@ fun main(){
         width =  5f,
         height = 7f,
     )
-    println("Area of rectangle is:${rect.area}")
+   println("Area of rectangle is:${rect.area}")
     println("Circumference is:${rect.circumference}")
     val cir=Circle(
        radius = 5f,
 
     )
-    println("Area of circle is:${cir.area}")
+ println("Area of circle is:${cir.area}")
     println("Circumference is:${cir.circumference}")
     println("The sum of area of rectangle and circle:${sumarea(rect, cir)}")
     println("The sum of circumference of rectangle and circle:${sumcircumference(rect,cir)}")
+    printShape(rect,cir)
 }
-interface Shape{
+
+sealed interface Shape //lakin sealed ki waja sai jo cases daikh laita agar har cheez wo civer kar raha phr else ni likhnaye daita
+{
     val area: Float
     val  circumference: Float
+}
+fun printShape(vararg shape: Shape) {
+    for (shape in shape) {
+       val input= when (shape) {//jb kissi vaiable mai when ko store kartaye hn tu lse likhna zaroori h
+            is Rectangle1 -> "First one is for rectangle"
+            is Circle -> "Second one is for circle"
+
+        }
+println(input)
+    }
 }
 fun sumarea(vararg shapes: Shape): Double{
     val new=shapes.sumOf { it->
